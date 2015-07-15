@@ -1,0 +1,108 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.nav{
+    top: 5%;
+    width: 100%;
+    position: fixed;
+    text-align:center;   
+}
+.button{
+    float:left;  
+}
+hi{
+    display: block;
+}
+.button a:only-child{
+    position: inherit;
+    background-color: hsla(102,84%,37%,0.5);
+    display:inline-block;
+    color: white;
+    margin: 0;
+    padding: 25px 50px 25px 50px;
+    text-align:center;
+    text-transform: uppercase;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.4); 
+}
+.nav li:nth-child(even) a{
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+}
+.nav li:first-child a {
+    border-left: solid black 2px;
+    border-top-left-radius: 6px;
+}
+.nav li:last-child a {
+    border-right:solid black 2px;
+    border-top-right-radius: 6px;
+}
+.button a:only-child:hover{
+    border:none; 
+    background-color: hsla(102,84%,37%,1);
+    transform:scale(1.2,1.2);
+    border-bottom: solid #CD00CD 4px; 
+}
+ul{
+    display:inline-block;
+    margin: auto;
+    padding: 0;
+    font: bold 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    list-style-type: none;
+}
+.after-nav{
+    clear: both;
+}
+#buttom2{
+    background-color: hsla(102,84%,37%,0.5);
+    display:inline-block;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    border: solid black 2px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.4); 
+}
+#buttom2:hover{ 
+    background-color: hsla(102,84%,37%,1);
+    transform:scale(1.5,1.5);
+}
+#img{
+    display: block;
+    position: absolute;
+    top:5%;
+    right:5%;
+    
+}
+#img img{
+    width: 50px;
+    filter:gray;
+    -webkit-filter: grayscale(1); 
+}
+#img img:hover{
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite;
+    animation-duration: 4s;
+    filter:none;
+    -webkit-filter: grayscale(0);
+}
+@-webkit-keyframes example {
+    0%   {transform:rotate(30deg);}
+    25%  {transform:rotate(90deg);}
+    50%  {transform:rotate(180deg);}
+    75%  {transform:rotate(270deg);}
+    100% {transform:rotate(360deg);}
+}
+.all{
+    wight:70%;
+    hight:100%;
+    background-color: hsla(102,84%,37%,0.5);
+}
+body{
+    background-color: aliceblue;
+}
+
+    
